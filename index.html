@@ -531,8 +531,8 @@
         const diff = startX - e.changedTouches[0].clientX;
         if (Math.abs(diff) > 40) {
           clearInterval(timer);
-          // RTL: swipe left = next (positive diff), swipe right = prev
-          goTo(diff > 0 ? (current + 1) % total : (current - 1 + total) % total);
+          // RTL: swipe right = next, swipe left = prev
+          goTo(diff > 0 ? (current - 1 + total) % total : (current + 1) % total);
           startTimer();
         }
       });
