@@ -1,0 +1,8 @@
+node_modules/
+temporary screenshots/
+.claude/
+.vscode/
+docs/
+references/
+temp_b64.txt
+temp_*.txt
