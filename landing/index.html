@@ -474,10 +474,10 @@
       const phone = document.getElementById('field-phone').value.trim();
 
       try {
-        await fetch('https://hook.eu2.make.com/ae8k5j53ts1hfbnm7p87oxe49fhsyp0o', {
+        await fetch('https://hook.eu2.make.com/lciwv5l6jcxq81413xwxw2fqqh6yux8p', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, phone })
+          body: JSON.stringify({ name, phone, form: 'landing', source: 'organic' })
         });
       } catch (_) {
         // fail silently — still show success to user
